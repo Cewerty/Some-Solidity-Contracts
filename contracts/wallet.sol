@@ -24,11 +24,20 @@ contract wallet {
     mapping(address => balanceStatus) public wallet_users;
 
     /**
+    * @notice Blocks functions for not owner of wallet
+    * @dev Reverts if caller isn't owner
+    * @param user_address The address of wallet owner
+    */
+    modifier onlyForOwner(address user_address) {
+        require(msg.sender == user_address, "This operation can be done only by wallet owner");
+        _;
+    }
+    /**
      * @notice Returns the balance and withdrawal limit for a given user address.
      * @param userAddress The address of the user.
      * @return The balance and withdrawal limit of the user.
      */
-    function getUserInfo(address userAddress) public  view  returns(uint, uint) {
+    function getUserInfo(address userAddress) public  view   onlyForOwner(userAddress)  returns(uint, uint) {
         return (wallet_users[userAddress].balance, wallet_users[userAddress].moneyLimit);
     }
 
