@@ -1,0 +1,131 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "beforeEach",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testDrawFromWalletWithinLimit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testSendFromWalletWithinLimit",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testSetUserBalance",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "testUserReceivesEther",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "walletInstance",
+				"outputs": [
+					{
+						"internalType": "contract wallet",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"beforeEach()": {
+					"notice": "Перед каждым тестом разворачиваем новый экземпляр контракта"
+				},
+				"testDrawFromWalletWithinLimit()": {
+					"notice": "Тестируем успешное снятие средств в пределах лимита"
+				},
+				"testSendFromWalletWithinLimit()": {
+					"notice": "Тестируем отправку средств другому пользователю в пределах лимита"
+				},
+				"testSetUserBalance()": {
+					"notice": "Тестируем функцию setUserBalance с пополнением баланса"
+				},
+				"testUserReceivesEther()": {
+					"notice": "Тестируем получение пользователем отправленных средств"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"tests/wallet_test.sol": "WalletTest"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/wallet.sol": {
+			"keccak256": "0x65d05356007e8704e12d0839b9b93f8d571e0e5d78080ff87ab1be7db4a3cc98",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://36fd838703ef761c803774937d6d068596de18c84c3d04c7e99637e1aa6da9ba",
+				"dweb:/ipfs/QmYQPeab2xXigmpSUoibRbWYP4vxBoK6WueNJ3gJVtT2GE"
+			]
+		},
+		"remix_tests.sol": {
+			"keccak256": "0xe2783cdc204cba8c72494119339f1d90f9022b15d6c718c668b7f097d8e29787",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://bb6a22e64c7f16bcaab63b1c1a1b269d5be8a6d37bdd9dec1718477ab916b18e",
+				"dweb:/ipfs/QmdkW1tT5iadBvaHMCoskhDGZKnfdg8o1D9CcoQYtdJet7"
+			]
+		},
+		"tests/wallet_test.sol": {
+			"keccak256": "0x9fb2f884529790a029552825e086d9b21821ea0ad369b0741779051f23a31ebe",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c67a70b98fa96827d9df4aab4e9ad7362ef68fb3348ac40a9811f1a0b6fd9acb",
+				"dweb:/ipfs/QmPKZgAqxbzyrAQRS3cqW4TfRDBwVQGo4oL39zAP3NacPf"
+			]
+		}
+	},
+	"version": 1
+}

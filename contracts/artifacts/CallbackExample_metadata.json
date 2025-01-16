@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "executeCallback",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "function (uint256) external returns (bool)",
+						"name": "_callback",
+						"type": "function"
+					}
+				],
+				"name": "setCallback",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/callback.sol": "CallbackExample"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/callback.sol": {
+			"keccak256": "0x7f5815a18b5d9eb7832a994721d766beb9b9c328b025f3a18bab5d22ca67d50a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5dcc3bb27e0e079e427a071607dd01cc4f8bac12a7a77d725da0866c30cf3955",
+				"dweb:/ipfs/QmS1WZsAeCcQ8hjmhbosYTwSyb2VRvFhT5ENtjKo7zjMe5"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,199 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "LogMessage",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "LogNumber",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "sender",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value1",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value2",
+						"type": "uint256"
+					}
+				],
+				"name": "LogTwoValues",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "message",
+						"type": "string"
+					}
+				],
+				"name": "logMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "logNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "value1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value2",
+						"type": "uint256"
+					}
+				],
+				"name": "logTwoValues",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Контракт для демонстрации использования событий для логирования.",
+			"events": {
+				"LogMessage(address,string)": {
+					"details": "Событие, записывающее сообщение в лог.",
+					"params": {
+						"message": "Сообщение.",
+						"sender": "Адрес отправителя сообщения."
+					}
+				},
+				"LogNumber(address,uint256)": {
+					"details": "Событие, записывающее числовое значение в лог.",
+					"params": {
+						"sender": "Адрес отправителя.",
+						"value": "Числовое значение."
+					}
+				},
+				"LogTwoValues(address,uint256,uint256)": {
+					"details": "Событие, записывающее два значения в лог",
+					"params": {
+						"sender": "Адрес отправителя",
+						"value1": "Первое значение",
+						"value2": "Второе значение"
+					}
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"logMessage(string)": {
+					"details": "Записывает текстовое сообщение в лог.",
+					"params": {
+						"message": "Сообщение для записи."
+					}
+				},
+				"logNumber(uint256)": {
+					"details": "Записывает числовое значение в лог.",
+					"params": {
+						"value": "Числовое значение для записи."
+					}
+				},
+				"logTwoValues(uint256,uint256)": {
+					"details": "Записывает два числовых значения в лог",
+					"params": {
+						"value1": "Первое значение",
+						"value2": "Второе значение"
+					}
+				}
+			},
+			"title": "SimpleLogger",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/simpleLogger.sol": "SimpleLogger"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/simpleLogger.sol": {
+			"keccak256": "0xe0f13c4f48ca5d8fca3fb398b2ac2bed1c33299b387ae7700321c6af13d2b0a0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9e7a4f341d683287393d06f22400fc089f9a88fdf27bbf557c7a44b1e317a965",
+				"dweb:/ipfs/QmVRvwprVcG92YJXtHohfEMJeCcckoCy4vnFo1g5ekrc8C"
+			]
+		}
+	},
+	"version": 1
+}
